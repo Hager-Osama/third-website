@@ -1,0 +1,593 @@
+/*--------------start basic class------------------- */
+body
+{
+    margin: 0;
+    font-family: cursive
+}
+.container
+{
+    margin: auto;
+    width: 85%;
+}
+.left
+{
+    float:left;
+}
+.right
+{
+    float:right;
+}
+button
+{
+ color: #fff;
+    background-color:#4649b7;
+    padding: 9px;
+    font-family: cursive;
+    border-radius: 8px;
+    border:none;
+    outline: none
+}
+/*--------------  end basic class------------------- */
+/*--------------  start navbar responsive------------------- */
+/*.navbar
+{
+ position: fixed;
+ right: 0px;
+ left: 0px;
+ top:0px;
+ bottom: 0px;
+z-index: 9999;لسه فاضل الاكشن لما يتحرك يظهرله باك جروند  بالجافا اسكربت 
+}*/
+.navbar .container
+{
+ display: flex ;
+ justify-content:space-between
+}
+.navbar .links
+{
+ margin-top: 18px;   
+}
+.navbar .links ul
+{
+  padding: 0px;
+  display: flex;
+}
+.navbar .links ul li
+{
+ list-style: none;
+ margin-right:32px;
+}
+.navbar .links > ul > li:hover ul{
+  display: block; transition: 2s all;
+}
+.navbar .links ul li a
+{
+  text-decoration: none;
+    font-size: 18px;
+    color: #4649b7;  
+}
+.navbar .links ul li a:hover
+{
+  color:#7a7de3;   
+}
+.navbar .links ul li > ul
+{
+   display: block;
+    position: absolute;
+    background-color: aliceblue;
+    width: 9%;
+    color: #106eea;
+    top: 13%;
+    right: 18%;
+}
+.navbar .links ul li > ul li
+{
+      margin: 5px  
+}
+.navbar .links ul li > ul li:hover
+{
+  background-color:#4154f1; 
+ color: #fff
+}
+
+@media(max-width:767px)/*for tab*/
+{
+    .navbar .container 
+    {
+      display: block;
+      justify-content: reset
+    }
+    
+    .navbar .links ul
+    {
+      display: block;  
+    }
+    .navbar .links ul li
+    {
+     margin-top: 3px   
+    }
+    .navbar .links ul button
+    {
+     margin-top: 4px   
+    }
+}
+/*--------------  end navbar responsive------------------- */
+/*--------------  start header responsive------------------- */
+.header
+{
+     background-image: url(../image/hero-bg.png);
+   
+}
+.header .container
+{
+ display: flex;
+ justify-content: space-between
+}
+.header .container .text
+{
+  margin-top: 12%;
+   margin-bottom:5%;
+  width: 41%;
+  font-size: 21px;  
+}
+.header .container .image
+{
+  margin-top:12%;
+  margin-bottom:5%;
+}
+.header .container .text h1 
+{ 
+ color:#4649b7 
+}
+.header .container .text button
+{ 
+    margin-top: 15px;
+    padding: 17px;
+    font-size: 18px;
+    width: 36%;
+    box-shadow: 0px 5px 30px rgb(65 84 241 / 40%);
+}
+/*@media(min-width:768px) and (max-width:1000px){
+    body{
+        background-color: red;
+    }
+}*/
+@media(max-width:767px)
+{
+
+ .header .container
+ {
+   display: block;
+   justify-content: reset
+ } 
+ .header .container .text 
+    {
+        width: 100%;
+        text-align: center;
+    }
+}
+/*--------------  end header responsive------------------- */
+/*--------------  start About responsive------------------- */
+.about
+{
+ margin-top: 50px ;
+ margin-bottom: 50px 
+}
+.about .container
+{
+    display: flex;
+    justify-content: center;  
+}
+.about .container .text
+{
+     width: 49%;
+    background-color: #f6f9ff;
+    margin: auto;
+    padding: 26px;
+}
+.about .container .text h5
+{
+ color:#4154f1;   
+}
+.about .container .text h2
+{
+ color:#012970;   
+}
+.about .container .image
+{
+  width:51%   
+}
+.about .container .image img
+{
+  width:100% ;
+  height: auto;
+}
+.about .container .text button
+{
+    margin-top: 15px;
+    padding: 17px;
+    font-size: 18px;
+    width: 36%;
+    box-shadow: 0px 5px 30px rgb(65 84 241 / 40%);
+}
+
+@media(max-width:767px)
+{
+ .about .container
+    {
+        display: block;
+        justify-content: reset;
+    }
+    .about .container .text 
+    {
+        width: 100%;
+        text-align: center;
+        padding:1px;
+    }
+    .about .container .image
+    {
+      width: 100%;  
+    }
+}
+/*--------------  end About responsive------------------- */
+/*--------------  start OUR VALUES responsive------------------- */
+
+.value .container
+{
+  text-align: center;
+}
+.value  .container h5
+{
+ color:#4154f1;   
+}
+.value  .container h1 ,.value  .container .content h3
+{
+  color:#012970; 
+}
+.value  .container .content
+{
+ display: inline-block;
+ margin: 13px;
+ width:27%;
+  box-sizing: border-box;
+  padding: 10px;
+  padding-bottom: 20px;
+  box-shadow: 0px 1px 5px rgb(65 84 241 / 40%);
+   margin-bottom: 50px
+}
+.value  .container .content img
+{
+    width: 90%
+}
+.value  .container .content img:hover
+{
+    transform: scale(0.8)
+}
+.value  .container .progress
+{
+     border: 1px solid #ddd;
+    box-shadow: 0px 5px 8px rgb(65 84 241 / 40%);
+    width: 22%;
+    display: inline-block;
+    margin: 1%;
+}
+.value  .container .progress  span 
+{
+ color:#012970    ;
+    font-size: 25px;
+}
+.value  .container .progress  div:first-of-type
+{
+      width: 30%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.value  .container .progress  div:last-of-type
+{
+  width: 70%;
+    float: left;
+    text-align: left; 
+}
+.value  .container .progresses div:first-of-type > div > span {color:red } 
+.value  .container .progresses div:nth-of-type(2) > div > span {color:green } 
+
+@media(max-width:767px)
+{
+  .value  .container .content
+    {
+      width: 95% ;
+      margin:0px;
+      margin-bottom: 20px
+    }
+    .value  .container .content:last-of-type
+    {
+       margin-bottom: 50px  
+    }
+    .value  .container .progress
+    {
+        width: 46%;
+    }
+}
+/*--------------  end OUR VALUES responsive------------------- */
+/*-------------  start service responsive------------------*/
+.service
+{
+ margin-top: 100px   
+}
+.service .container
+{
+ display: flex;
+ justify-content: space-between
+}
+.service .container .text
+{
+ width: 45%   
+}
+.service .container .text h2
+{
+  color:#012970   
+}
+.service .container .text ul
+{
+   padding: 0px;
+    margin: 0px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+}
+.service .container .text ul li
+{
+ margin-right:15px;
+ list-style: none;
+  
+  padding-bottom:12px;
+}
+.service .container .text ul li:first-of-type
+{
+    border-bottom: 3px solid #4154f1;
+    color: #4154f1
+}
+.service .container .text h3
+{
+ color:#012970    
+}
+.service .container .image
+{
+  width: 45%  
+}
+.service .container .image img
+{
+  width:100%  
+}
+@media(max-width:767px)
+{
+    .service .container
+    {
+        display: block;
+    } 
+    .service .container .text ,.service .container .image
+    {
+        width: 100% ;
+        margin-bottom: 50px
+    }
+}
+/*@media(min-width:768px)and (max-width:1400px)
+{
+    .service .container
+    {
+        display:flex;
+        justify-content: space-between
+    } 
+    .service .container .text ,.service .container .image
+    {
+        width:40% ;
+        margin-bottom: 50px
+    }  
+}*/
+/*-------------  end service responsive------------------*/
+/*--------------  start FEATURES responsive------------------- */
+.fetures
+{
+  margin-top: 7%;
+  margin-bottom:   50px
+}
+.fetures .container .box
+{
+  margin-top:2%;
+  box-shadow: 0px 5px 8px rgb(65 84 241 / 40%);
+   width: 25%;
+  display: inline-block; 
+  text-align: center;
+  padding: 30px;
+  border-bottom: 3px solid #2db6fa;
+  border-radius: 3px;
+  margin-left: 3%;
+}
+.fetures .container .box:nth-of-type(2){border-bottom: 3px solid #f68c09;}
+.fetures .container .box:last-of-type{border-bottom: 3px solid #08da4e ;}
+
+.fetures .container .box > span
+{ 
+  padding:35px;
+  background-color: #dbf3fe;
+  display: inline-block;  
+  font-size: 25px;
+  border-radius: 3px;
+  color:#2db6fa
+}
+.fetures .container .box:last-of-type > span
+{
+    background-color:#cffddf;    
+}
+.fetures .container .box:nth-of-type(2) > span
+{
+      background-color:#fde3c4; 
+color:#f68c09 
+}
+.fetures .container .box h4 ,.fetures .container .box h4 > span
+{
+  color:#2db6fa  
+}
+.fetures .container .box:nth-of-type(2) h4 ,.fetures .container .box:nth-of-type(2) h4 > span
+{
+  color:  #f68c09   
+}
+.fetures .container .box:last-of-type  h4 ,.fetures .container .box:last-of-type span
+{
+  color:#08da4e  
+}
+.fetures .container .box:hover
+{
+ background-color:#2db6fa ;
+ color: white;
+}
+.fetures .container .box:nth-of-type(2):hover
+{
+    background-color:  #f68c09 ;
+}
+.fetures .container .box:last-of-type:hover
+{
+     background-color:#08da4e;  
+}
+.fetures .container .box h4:hover,.fetures .container .box h4 > span:hover/*qqqqqqqqqqqqqqqqqqq*/
+{
+    color: white
+}
+@media(max-width:767px)
+{
+    .fetures .container .box
+    {
+        display: block;
+        width:90%;
+        margin-bottom:10px;
+        box-sizing: border-box
+    }
+}
+@media(min-width:768px)and (max-width:1400px)
+{ 
+.fetures .container .box
+    { 
+        margin: 1px;
+        width: 23%;
+    }
+   
+}
+/*--------------  end FEATURES responsive------------------- */
+/*-------------start new ------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------end new ------------------*/
+/*-------------start PRICING ------------------*/
+.pricing
+{
+  margin-top:110px  
+}
+.pricing .container
+{
+ text-align: center;
+ display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.pricing h5
+{
+ color:#4154f1; /*لبنى*/ ;
+ text-align: center
+}
+.pricing  h1
+{
+  color: #012970;/*كحلى*/  
+ text-align: center
+}
+.pricing .container .plans
+{
+  box-shadow: 0px 5px 8px rgb(65 84 241 / 40%);
+    width: 22%;
+    margin:5px ;
+    padding: 5px
+}
+.pricing .container .plans:hover
+{
+  transform: scale(1.1);
+  transition: 1.2s all
+}
+.pricing .container .plans h4
+{
+    
+}
+.pricing .container .plans h3
+{
+    
+}
+.pricing .container .plans h3 span 
+{
+    
+}
+.pricing .container .plans img
+{
+    
+}
+.pricing .container .plans p
+{
+    margin:8px
+}
+.pricing .container .plans button
+{
+  background-color:white;
+  border: 1px solid #4649b7;
+  color: #4649b7;
+ border-radius: 12px;
+ width: 30%;
+ margin: auto;
+    margin-bottom: 13px;
+}
+.pricing .container .plans button:hover
+{
+  background-color: #4649b7;
+  color:white;
+    transition: 1s all;
+}
+@media(max-width:767px)
+{
+    .pricing .container .plans
+    {
+     width: 95%;
+     margin-bottom: 20px
+    }
+}
+@media(min-width:768px)and (max-width:1400px)
+{
+    .pricing .container .plans
+    {
+     width:46%;
+     margin-bottom: 20px
+    }
+}
+
+ /*-------------end PRICING ------------------*/
+
+
+
+
+
+
+
+
+
+
+
